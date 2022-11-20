@@ -18,4 +18,8 @@ class Article extends Model
     public function categories() {
         return $this->belongsToMany(Category::class, 'article_categories', 'article_id', 'category_id');
     }
+
+    public function images() {
+        return $this->hasMany(Image::class, 'article_id', 'id');
+    }
 }

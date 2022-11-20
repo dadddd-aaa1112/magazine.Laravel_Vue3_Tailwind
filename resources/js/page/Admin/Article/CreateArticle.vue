@@ -23,12 +23,13 @@ const store = async () => {
         const data = new FormData()
         const files = myDropzone.value.getAcceptedFiles()
         files.forEach(file => {
-            data.append('image_preview[]', file)
+            data.append('images[]', file)
             myDropzone.value.removeFile(file)
         })
-        data.append('title', 'title')
-        data.append('description', 'description')
-        data.append('content', 'content')
+        data.append('title', 'title2')
+        data.append('description', 'description2')
+        data.append('content', 'content2')
+        data.append('image_preview', 'image_preview2')
 
     await axios.post('/api/articles', data
     )

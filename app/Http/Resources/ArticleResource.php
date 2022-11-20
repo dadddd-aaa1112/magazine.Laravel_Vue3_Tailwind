@@ -20,6 +20,9 @@ class ArticleResource extends JsonResource
             'description' => $this->description,
             'content' => $this->content,
             'image_preview' => $this->image_preview,
+            'images' => ImageResource::collection($this->images) ,
+            'tags' => TagResource::collection($this->tags),
+            'categories' => CategoryResource::collection($this->categories),
         ];
     }
 }

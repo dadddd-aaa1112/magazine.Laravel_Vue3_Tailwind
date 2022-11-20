@@ -1,9 +1,16 @@
 <template>
     artdfsdf
+    <!--<pre>-->
+    <!--    {{articles}}-->
+    <!--    </pre>-->
     <div v-for="article in articles">
         <div class="mb-2">
-            <p>title {{article.title}}</p>
-            <p>description {{article.description}}</p>
+            <p>title {{ article.title }}</p>
+            <p>description {{ article.description }}</p>
+            <span v-for="image in article.images">
+<!--            <img :src="image.url">-->
+              preview   <img :src="image.preview_image">
+                </span>
             <span @click="$router.push({name: 'article_item', params: {
         id: article.id
     }})">podrobnee...</span>
