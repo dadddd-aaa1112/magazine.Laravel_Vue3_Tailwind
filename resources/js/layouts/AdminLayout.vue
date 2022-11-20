@@ -1,15 +1,16 @@
 <template>
 
-<div class="flex flex-row" >
+    <div class="flex flex-row">
 
         <Sidebar></Sidebar>
-    <div class="flex flex-col w-full" >
-        <Nav></Nav>
+        <div class="flex flex-col w-full">
+            <Nav></Nav>
 
-
-        <router-view></router-view>
-</div>
-</div>
+            <div class="w-1/4">
+                <router-view></router-view>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>

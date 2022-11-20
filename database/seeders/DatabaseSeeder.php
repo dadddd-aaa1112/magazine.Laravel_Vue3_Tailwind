@@ -4,8 +4,11 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Article;
+use App\Models\ArticleCategory;
+use App\Models\ArticleTag;
 use App\Models\Category;
 use App\Models\Tag;
+use Database\Factories\ArticleTagFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,6 +24,8 @@ class DatabaseSeeder extends Seeder
         Article::factory(10)->create();
         Tag::factory(10)->create();
         Category::factory(10)->create();
+        ArticleTag::factory(15)->create();
+        ArticleCategory::factory(15)->create();
 //
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

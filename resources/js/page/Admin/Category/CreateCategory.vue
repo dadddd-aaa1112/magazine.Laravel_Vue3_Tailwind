@@ -1,17 +1,12 @@
 <template>
 
-    main comp
-
-
-
 </template>
 
 <script>
 export default {
-    name: "Main"
+    name: "CreateCategory"
 }
 </script>
-
 
 <style scoped>
 

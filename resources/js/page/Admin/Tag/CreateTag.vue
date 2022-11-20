@@ -1,17 +1,12 @@
 <template>
 
-    main comp
-
-
-
 </template>
 
 <script>
 export default {
-    name: "Main"
+    name: "CreateTag"
 }
 </script>
-
 
 <style scoped>
 

@@ -25,7 +25,9 @@ class ArticleController extends Controller
     }
 
     public function store(StoreRequest $request) {
+
         $data = $request->validated();
+
         $article = Article::firstOrCreate($data);
         return $article;
     }
